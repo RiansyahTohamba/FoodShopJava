@@ -7,15 +7,15 @@
         <servlet-name>firstapp</servlet-name>
         <url-pattern>/welcome</url-pattern>
     </servlet-mapping>
-<!--  <servlet>-->
-<!--    <servlet-name>main</servlet-name>-->
-<!--    <servlet-class>com.riansyah.main.MainServlet</servlet-class>-->
-<!--  </servlet>-->
-<!--  <servlet-mapping>-->
-<!--    <servlet-name>main</servlet-name>-->
-<!--    <url-pattern>/*</url-pattern>-->
-<!--  </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>Product API</servlet-name>
+        <servlet-class>riansyah.api.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Product API</servlet-name>
+        <url-pattern>/api/product</url-pattern>
+    </servlet-mapping>
+
+    
 </web-app>
-
-
-

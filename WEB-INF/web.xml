@@ -1,21 +1,25 @@
 <web-app>
+
+    <!-- Mapping between Servlet-Name and Class -->
     <servlet>
-        <servlet-name>firstapp</servlet-name>
+        <servlet-name>First App</servlet-name>
         <servlet-class>riansyah.main.FirstServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>firstapp</servlet-name>
-        <url-pattern>/welcome</url-pattern>
-    </servlet-mapping>
-
     <servlet>
         <servlet-name>Product API</servlet-name>
         <servlet-class>riansyah.api.ProductServlet</servlet-class>
     </servlet>
+
+    <!-- Mapping between Servlet-Name and URL -->
+
+    <servlet-mapping>
+        <servlet-name>First App</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>Product API</servlet-name>
         <url-pattern>/api/product</url-pattern>
     </servlet-mapping>
-
     
 </web-app>
